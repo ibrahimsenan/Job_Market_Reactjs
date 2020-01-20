@@ -8,9 +8,8 @@ class DataSetRequestHandler {
             try {
 
                 myLocalDataStore = JSON.parse(localStorage.getItem("jobDataSet"));
-                if (myLocalDataStore.length !== 0 || myLocalDataStore.length !== undefined) {
+                if (myLocalDataStore !== null) {
                     resolve(myLocalDataStore);
-                    console.log("FITSRSS", myLocalDataStore);
                 } else {
                     localStorage.setItem("jobDataSet", JSON.stringify(JobsDataSet));
                     myLocalDataStore = JSON.parse(localStorage.getItem("jobDataSet"));

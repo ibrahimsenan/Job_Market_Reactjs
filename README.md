@@ -15,3 +15,10 @@ In the project directory, you can run:
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## `ScreenShots`
+![screenshots1](/screenshots/1.png?raw=true "screenshots1")
+
+![screenshots2](/screenshots/2.png?raw=true "screenshots2")
+
+![screenshots3](/screenshots/3.png?raw=true "screenshots3")

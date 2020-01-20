@@ -1,4 +1,4 @@
-# Job_Market_Reactjs
+# CURD Jobs Market Example Reactjs
 React js application that shows all the available jobs (TalentBait_Visualino_Challenge)
 
 ## Clone the Project 

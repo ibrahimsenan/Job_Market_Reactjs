@@ -10,7 +10,6 @@ import '../../App.css';
 export default class JobTableView extends React.Component {
     constructor(props) {
         super(props);
-        console.log("props.dataSet", props.dataSet)
         this.state = {
             stateDataSet: Object.keys(props.dataSet).length !== 0 ? props.dataSet : Constants.InitialDataSet,
             stateEditingMode: props.editingMode,
@@ -51,8 +50,6 @@ export default class JobTableView extends React.Component {
     changeDataSet() {
 
         const {stateDataSet, stateEditingMode, viewLink} = this.state;
-        console.log(Object.keys(stateDataSet).length, stateDataSet.title, stateDataSet.employer, stateDataSet.city,
-            stateDataSet.requirements.length, stateDataSet.tasks.length)
         if (Object.keys(stateDataSet).length !== 0 && stateDataSet.title !== "" && stateDataSet.employer !== "" && stateDataSet.city !== ""
             && stateDataSet.requirements.length !== 0 && stateDataSet.tasks.length !== 0) {
 
@@ -80,7 +77,6 @@ export default class JobTableView extends React.Component {
     }
 
     changeInputs(key, text) {
-        console.log(key, text)
         const {stateDataSet} = this.state;
         switch (key) {
             case "title":

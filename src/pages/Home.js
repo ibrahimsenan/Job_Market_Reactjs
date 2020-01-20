@@ -25,15 +25,7 @@ class HomePage extends React.Component {
         }
     }
 
-    componentDidMount() {
-
-        setTimeout(() => {
-            console.log("dataSetRequestState", this.props.state.dataSetRequestState.data)
-        }, 1000);
-    }
-
     toggleModal(jobID, index) {
-        console.log("recruitingDataSet", jobID, index)
         this.setState({
             jobID: jobID,
             jobIndex: index,
@@ -69,7 +61,6 @@ class HomePage extends React.Component {
     render() {
         const {moderateDataSource, fineDataSource, severeDataSource, actions, state} = this.props;
         const {loading, textView, dataSet, viewLink} = this.state;
-        console.log("PROPS,actions, state", state.dataSetRequestState.data);
         return (
             <div>
                 <JobTableComponent dataSet={dataSet}

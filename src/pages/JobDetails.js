@@ -25,7 +25,6 @@ class JobDetails extends React.Component {
 
     render() {
         const {recordIndex, jobDataSetProps, editingModeProps} = this.props.location;
-        console.log("location", this.props.state);
         let myLocalDataStore;
         let myLocalIndex;
         if (jobDataSetProps == undefined) {

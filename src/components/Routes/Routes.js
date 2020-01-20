@@ -1,26 +1,23 @@
 import {BrowserRouter as Router, Switch, Route, withRouter} from "react-router-dom";
-import Home from "../pages/Home";
+import Home from "../../pages/Home";
 import React from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import {HistoryView} from "../components"
-import JobDetails from "../pages/JobDetails"
-import CreateNewJob from "../pages/CreateNewJob"
-import * as JobMarketActions from "../actoins/job_market_actions";
+import {HistoryView} from "../index"
+import JobDetails from "../../pages/JobDetails"
+import CreateNewJob from "../../pages/CreateNewJob"
+import * as JobMarketActions from "../../actoins/job_market_actions";
 
 class Routes extends React.Component {
     constructor(props) {
         super(props)
 
     }
-
     componentDidMount() {
         this.props.actions._onRequestGetJobCollection();
 
     }
-
     render() {
-
         const {actions, state} = this.props;
         return (
             <Router>

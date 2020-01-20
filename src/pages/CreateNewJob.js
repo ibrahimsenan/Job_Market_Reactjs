@@ -19,7 +19,6 @@ class CreateNewJob extends React.Component {
     }
 
     render() {
-        console.log("XRENDER", this.props.state.requestPostDataSet.cleanDataView)
         return (
             <div className={"JobDetailsContainer"}>
                 <JobTableView addNewCollectionCall={(newJobCollection) => {

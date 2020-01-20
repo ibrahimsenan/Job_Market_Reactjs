@@ -2,7 +2,7 @@ import JobTableView from "./views/JobTableView";
 import JobTableComponent from "./views/JobTableComponent";
 import InputView from "./views/InputsView"
 import TextAreaView from "./views/TextAreaView"
-import Routes from "./Routes"
+import Routes from "./Routes/Routes"
 import Modal from "./views/Modal"
 import HistoryView from "./views/HistoryView"
 

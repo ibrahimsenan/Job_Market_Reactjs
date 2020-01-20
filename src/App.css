@@ -434,4 +434,10 @@ button,
         padding: 10px;
         margin: 0;
     }
+    .imageStyle {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
 }

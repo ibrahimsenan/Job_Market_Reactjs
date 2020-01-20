@@ -1,0 +1,437 @@
+.App {
+    text-align: center;
+    width: 100%;
+}
+
+.App header {
+    width: 100%;
+}
+
+.headerTop {
+    background-color: #3775a6;
+    width: inherit;
+    height: 20vh;
+    display: flex;
+}
+
+.tableHeader tr {
+    height: 50px;
+    background-color: #000;
+}
+
+.tableHeader button {
+    height: 50px;
+    width: 200px;
+    left: 1px;
+}
+
+.tableFooter {
+    height: 50px;
+    background-color: #fff;
+    align-content: flex-start;
+    border-top: 1px solid #ededed;
+}
+
+.headerTitel {
+    background-color: #3775a6;
+    width: 28%;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    z-index: 100;
+    position: absolute;
+    top: 14vh;
+    color: white;
+    font-size: calc(20px + 2vmin);
+    font-family: "Adobe Garamond Pro Bold";
+    font-style: italic;
+    display: flex;
+}
+
+.imageStyle {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-body {
+    background-color: #fff;
+    min-height: 50vh;
+    margin-top: 30px;
+    display: flex;
+    padding: 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(9px + 1vmin);
+    color: black;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+table,
+.jobsTable {
+
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 100%;
+
+}
+
+.jobsTable thead tr th {
+
+    padding: 10px;
+    border: 1px solid #ededed;
+    align-items: center;
+    justify-content: center;
+    color: #3775a6;
+}
+
+.jobsTable tbody tr td {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.jobsTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.jobsTable tbody tr:hover {
+    background-color: #ddd;
+}
+
+button,
+.button {
+    background-color: #3775a6;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: calc(9px + 1vmin);
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonLinkDiv {
+    border: none;
+    width: 90%;
+    align-items: right;
+    padding: 10px 50px;
+    justify-content: right;
+    border-radius: 5px;
+    child-align: right;
+
+}
+
+.buttonLink {
+    background-color: #3775a6;
+    border: none;
+    color: white;
+    position: relative;
+    right: -40%;
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: calc(9px + 1vmin);
+    cursor: pointer;
+}
+
+.controlButtonLink {
+    background-color: #3775a6;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: calc(9px + 1vmin);
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.jobDetailsViewTableStyle {
+    width: 100%;
+
+    text-align: left;
+    border: 0px solid #c6c6c6;
+    padding: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.JobDetailsContainer {
+    width: 100%;
+    align-items: center;
+}
+
+.jobDetailsViewTableStyle h8 {
+    color: red;
+    font-size: 13px;
+}
+
+.jobDetailsHeaderStyle h4 {
+    font-size: 20px;
+    color: #3775a6;
+
+}
+
+.headerTable {
+    width: 100%;
+    height: 50px;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    background-color: #fbfbfb;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.headerTable input {
+    border-radius: 5px;
+    width: 40%;
+    height: 0.8cm;
+    margin-top: 25px;
+    padding: 5px;
+    border: 0.5px solid #3775a6;
+}
+
+.headerTable tbody tr th {
+    height: 10px;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 10%;
+}
+
+.bodyTable {
+    width: 100%;
+    height: 50px;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    background-color: #fefefe;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.bodyTable textarea {
+    width: 100%;
+}
+
+.bodyTable tbody td {
+    padding-left: 10px;
+}
+
+.bodyTable thead h3 {
+    padding: 5px;
+    color: #3775a6;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.footerTable {
+    width: 100%;
+    height: 50px;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    background-color: #fefefe;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.footerTable thead h3 {
+    padding: 5px;
+    color: #3775a6;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.footerTable tbody td {
+    padding-left: 10px;
+}
+
+.footerTable textarea {
+    width: 100%;
+}
+
+.iconStyle {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.validIconStyle {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: red;
+}
+
+.backdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.44);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 500px;
+    padding-top: 300px;
+    z-index: 100;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 5px;
+    width: 400px;
+    align-content: center;
+    left: 200px;
+    height: 150px;
+    padding: 20px;
+    margin: 0;
+}
+
+.pathHistory {
+    text-align-all: center;
+    text-align: left;
+    border-radius: 10px;
+    border: 0.5px solid #f8f8f8;
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.pathHistory li {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer button {
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.notify {
+    position: fixed;
+    z-index: 100;
+    width: 15%;
+    top: 50%;
+    left: 30%;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 10px;
+    animation: fadeinout 5s linear forwards;
+    background-color: #3775a6;
+    box-shadow: 1px 1px 10px #888888;
+    color: white;
+    font-size: 20px;
+    font-style: oblique;
+    padding: 5%;
+}
+
+@keyframes fadeinout {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .headerTop div {
+        width: 90%;
+        top: 12vh;
+    }
+
+    .headerTable input {
+        border-radius: 5px;
+        width: 90%;
+        height: 0.8cm;
+        margin-top: 25px;
+        padding: 5px;
+        border: 0.5px solid #3775a6;
+    }
+
+    .headerTable button {
+        background-color: #3775a6;
+        border: none;
+        color: white;
+        padding: 15px 18px;
+        width: 100%;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: calc(9px + 1vmin);
+        margin: 20px 2px;
+        cursor: pointer;
+    }
+
+    .jobDetailsViewTableStyle {
+        padding: 1px;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .App-body {
+        background-color: #fff;
+        min-height: 50vh;
+        margin-top: 30px;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(9px + 1vmin);
+        color: black;
+    }
+
+    .backdrop {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.44);
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 100px;
+        padding-right: 100px;
+        padding-top: 100px;
+        z-index: 100;
+    }
+
+    .modal {
+        background-color: white;
+        border-radius: 5px;
+        width: 300px;
+        align-content: center;
+        left: 100px;
+        height: 150px;
+        padding: 10px;
+        margin: 0;
+    }
+}

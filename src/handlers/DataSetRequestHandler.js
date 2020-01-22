@@ -6,7 +6,6 @@ class DataSetRequestHandler {
     getJobsDataSetRequester() {
         return new Promise((resolve, reject) => {
             try {
-
                 myLocalDataStore = JSON.parse(localStorage.getItem("jobDataSet"));
                 if (myLocalDataStore !== null) {
                     resolve(myLocalDataStore);
@@ -29,14 +28,19 @@ class DataSetRequestHandler {
     postJobsDataSetRequester(jobCollection) {
         return new Promise((resolve, reject) => {
             try {
+                let charRand = 'abcdefghijklmnopqrstuvwxyz0123456789'
+                let randomId = '';
+                for (let i = 0; i < 6; i++) {
+                    randomId += charRand.charAt(Math.floor(Math.random() * charRand.length));
+                }
+                jobCollection._id = randomId;
+
                 if (myLocalDataStore.length > 0) {
-                    let charRand = 'abcdefghijklmnopqrstuvwxyz0123456789'
-                    let randomId = '';
-                    for (let i = 0; i < 6; i++) {
-                        randomId += charRand.charAt(Math.floor(Math.random() * charRand.length));
-                    }
-                    jobCollection._id = randomId;
                     myLocalDataStore = JSON.parse(localStorage.getItem("jobDataSet"));
+                    myLocalDataStore.push(jobCollection);
+                    localStorage.setItem("jobDataSet", JSON.stringify(myLocalDataStore));
+                    resolve(myLocalDataStore);
+                }else {
                     myLocalDataStore.push(jobCollection);
                     localStorage.setItem("jobDataSet", JSON.stringify(myLocalDataStore));
                     resolve(myLocalDataStore);

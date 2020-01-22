@@ -24,16 +24,16 @@ export default class JobTableComponent extends React.Component {
                 <thead>
                 <tr>
                     <th colSpan={7}>
-                        <div className={"buttonLinkDiv"}><NavLink className={"buttonLink"} to={"/createnewjob"}><Icon
-                            icon={plusCircle}/> Add New Job</NavLink></div>
+                        <NavLink className={this.props.dataSet.length > 0? "buttonLink" : "buttonLink2"} to={"/createnewjob"}><Icon
+                            icon={plusCircle}/> Add New Job</NavLink>
                     </th>
                 </tr>
                 <tr>
                     <th>#</th>
-                    <th>Job Title</th>
-                    <th>Company Recruiter</th>
-                    <th>Location</th>
-                    <th colSpan={3}>Action</th>
+                    <th><div>Job Title</div></th>
+                    <th><div>Company Recruiter</div></th>
+                    <th><div>Location</div></th>
+                    <th colSpan={3}><div>Action</div></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -70,13 +70,7 @@ export default class JobTableComponent extends React.Component {
                         </tr>
                     )
                 ) : <tr>
-                    <td colSpan={4}>There are no new jobs available at the moment!</td>
-                    <td colSpan={4} rowSpan={1}>
-                        <button onClick={() => {
-                            this.props.addNewRecord()
-                        }}>Create new Position
-                        </button>
-                    </td>
+                    <td className={"emptyTable"} colSpan={7}><div>There are no new jobs available at the moment!</div></td>
                 </tr>}
                 </tbody>
                 <tfoot>

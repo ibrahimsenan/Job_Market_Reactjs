@@ -26,9 +26,7 @@ export default class App extends React.Component {
                 </header>
                 <body className="App-body">
                 <Routes/>
-                {this.props.children}
                 </body>
-
             </div>
         );
     }
